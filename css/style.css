@@ -1,6 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 
+Black Magik Design 2025
+Jonathan Fox
+loadedcoal@gmail.com
+This is a simple blog that I was asked to make a small homework assinment in class. It was not required of us to spin up a server and write code, just to start a blog, BUT it had been a while since I got to mess around with stuff like this and could not help myself. 
+*/
+
+/* Global */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --font-one: #21fb03;
+    --font-two: #9203fb; 
+    --background-one: #000;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--background-one);
+    color: var(--font-one)
+}
+
+.main-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* Top/Hero */
+
+.top-bar {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--font-one);
+    padding: 2vw;
+    width: 70vw;
+}
+
+.hero-title {
+    font-size: 3rem;
+    color: var(--font-one);
+    margin-bottom: 1rem;
+
+}
+
+.cursor {
+    display: inline-flex;
+    width: 10px;
+    height: 3rem;
+    background-color: var(--font-one);
+    animation: blink 1s steps(2, start) infinite;
+    -webkit-animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+}
+
+a {
+    font-size: 1.2rem;
+    color: var(--font-one);
+    margin: 1rem;
+    text-decoration: none;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+a:hover {
+    color: var(--font-two);
+    font-size: 1.1rem;
+}
+
+/* Main body */
+
+.body-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3vh;
+    width: 90vw;
+
+}
+
+.body-wrap-top-box {
+    margin: 3vh 0;
+    width: 75%;
+}
+
+.body-about-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.body-about p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.body-wrap-bottom-box {
+    
+    padding: 2vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    color: var(--font-two)
+
+}
+
+.blog-entery-title {
+    font-size: 2rem;
+    
+}
+
+.blog-entery-date {
+    font-size: 1.3rem;
+    margin-bottom: 2vh;
+}
+
+.blog-entery-content {
+    font-size: 1rem;
+}
+
+.blog-entery-content p {
+    margin-bottom: 2vh;
+}
+
+/* footer */
+
+.footer {
+    margin: 3vh 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .cursor {
+        height: 2.1rem;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+
+    a:hover {
+        font-size: 0.9rem;
+    }
+
+    .body-wrap-top-box {
+        width: 100%;
+    }
+    
+}
+
 
