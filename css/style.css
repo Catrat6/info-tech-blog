@@ -25,7 +25,8 @@ This is a simple blog that I was asked to make a small homework assinment in cla
 body {
     font-family: 'Roboto', sans-serif;
     background: var(--background-one);
-    color: var(--font-one)
+    color: var(--font-one);
+  
 }
 
 .main-wrap {
@@ -34,8 +35,11 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    
+    
 }
+
+
 
 /* Top/Hero */
 
@@ -45,7 +49,7 @@ body {
     flex-direction: column;
     border-bottom: 1px solid var(--font-one);
     padding: 2vw;
-    width: 70vw;
+    width: 60vw;
 }
 
 .hero-title {
@@ -104,7 +108,7 @@ a:hover {
     align-items: center;
     text-align: center;
     margin-top: 3vh;
-    width: 90vw;
+    width: 60vw;
 
 }
 
@@ -164,6 +168,14 @@ a:hover {
 
 
 @media screen and (max-width: 768px) {
+    .top-bar {
+        width: 80vw;
+    }
+
+    .body-wrap {
+        width: 80vw;
+    }
+
     .hero-title {
         font-size: 2.2rem;
     }
